@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
 
-export class BookList extends Component {
-  static contextType = ThemeContext;
+class BookList extends Component {
+  static contextType = ThemeContext; // this can only be used in class based components.
+  // if we want to convert it into function based component then we have to use useContext hook.
   render() {
     const { isLight, light, dark } = this.context;
     const theme = isLight ? light : dark;

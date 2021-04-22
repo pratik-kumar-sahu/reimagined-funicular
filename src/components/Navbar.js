@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { AuthContext } from "../contexts/AuthContext";
 import { ThemeContext } from "../contexts/ThemeContext";
 
-// export class Navbar extends Component {
+// class Navbar extends Component {
 //   // After wrapping, calling ThemeContext here via React property contextType
 //   static contextType = ThemeContext;
 //   render() {
@@ -25,7 +25,7 @@ import { ThemeContext } from "../contexts/ThemeContext";
 // We can also access context using Consumer also like this below.
 // - Above approach is good for class based components and for function based components use below approach.
 // - Another benefit of below approach is that we can consume multiple contexts in one component. Cannot be done by above approach.
-export class Navbar extends Component {
+class Navbar extends Component {
   render() {
     return (
       <AuthContext.Consumer>
